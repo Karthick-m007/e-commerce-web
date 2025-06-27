@@ -6,7 +6,7 @@ import { productelement } from './Productprovider';
 export default function Products(props) {
   const  electricalProducts =useContext(productelement)
   return (
-    <div>
+    <div className='mx-20'>
      
       <h6 className='font-bold flex justify-center text-sm'>
         <ScrollFloat
