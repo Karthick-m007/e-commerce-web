@@ -1,14 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import ScrollFloat from '../ReactBits/ScrollFloat';
-import image from "../assets/unnamed.jpg"
 import { productelement } from './Productprovider';
 
-export default function Products(props) {
-  const  electricalProducts =useContext(productelement)
+export default function Products() {
+  const electricalProducts = useContext(productelement);
+
   return (
-    <div className='mx-20'>
-     
-      <h6 className='font-bold flex justify-center text-sm'>
+    <div className='mx-4 md:mx-20 my-10'>
+      <h6 className='font-bold flex justify-center text-sm mb-6'>
         <ScrollFloat
           animationDuration={1}
           ease='back.inOut(2)'
@@ -18,27 +17,27 @@ export default function Products(props) {
         >
           Our Products
         </ScrollFloat>
-
       </h6>
-      <div className='flex gap-4 justify-center flex-wrap'>
-        {
-          electricalProducts && electricalProducts.map((ele, id) => (
 
-
-            <div key={id} className="card" style={{ width: "18rem" }}>
-              <img src={ele.image} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">{ele.title}</h5>
-                <p className="card-text">{ele.price}</p>
-                <p className="card-text">{ele.description}</p>
-              </div>
+      <div className='flex gap-6 justify-center flex-wrap'>
+        {electricalProducts && electricalProducts.map((ele, id) => (
+          <div
+            key={id}
+            className={`rounded-lg shadow-md w-72 overflow-hidden transition-transform hover:scale-105 duration-300 ${ele.color}`}
+          >
+            <img
+              src={ele.image}
+              alt={ele.title}
+              className="w-full h-40 object-cover"
+            />
+            <div className="p-4">
+              <h5 className={`text-lg font-semibold mb-1 ${ele.textColor}`}>{ele.title}</h5>
+              <p className="text-sm text-gray-700 mb-1">₹{ele.price}</p>
+              <p className="text-sm text-gray-600">{ele.description}</p>
             </div>
-          ))
-        }
-   </div>
-
-
-      
+          </div>
+        ))}
+      </div>
     </div>
-  )
+  );
 }

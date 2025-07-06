@@ -4,6 +4,8 @@ import Navbar from './Components/Navbar';
 import Products from "../src/Components/Products"
 import Brands from './Components/Brands';
 import AboutUS from './Components/AboutUS';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 function App() {
   return (
     <div className=" bg-shipe-cove-400">
@@ -12,6 +14,8 @@ function App() {
      <Products />
      <Brands/>
      <AboutUS/>
+     <Contact/>
+     <Footer/>
     </div>
   );
 }
