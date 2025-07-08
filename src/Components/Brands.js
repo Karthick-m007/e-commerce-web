@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import image from '../assets/unnamed.jpg';
-
+import image1 from "../assets/legrand-940212.jpg"
+import image2 from "../assets/finolex.png"
+import image3 from "../assets/lt1.jpg"
 const fadeLeft = {
     hidden: { opacity: 0, x: -80 },
     visible: { opacity: 1, x: 0 },
@@ -27,7 +28,7 @@ export default function Brands() {
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
                 >
-                    <img src={image} alt="Legrand" className="w-52 h-52 object-cover rounded-xl shadow-lg" />
+                    <img src={image1} alt="Legrand" className="w-96 h-80 object-center rounded-xl shadow-lg" />
                 </motion.div>
 
                 <motion.div
@@ -71,7 +72,7 @@ export default function Brands() {
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
                 >
-                    <img src={image} alt="Legrand" className="w-52 h-52 object-cover rounded-xl shadow-lg" />
+                    <img src={image2} alt="Legrand" className="w-96 h-80 object-center rounded-xl shadow-lg" />
                 </motion.div>
             </div>
 
@@ -85,7 +86,7 @@ export default function Brands() {
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
                 >
-                    <img src={image} alt="Legrand" className="w-52 h-52 object-cover rounded-xl shadow-lg" />
+                    <img src={image3} alt="Legrand" className="w-96 h-80 object-center rounded-xl shadow-lg" />
                 </motion.div>
 
                 <motion.div

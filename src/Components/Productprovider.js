@@ -1,5 +1,9 @@
 
     import React, { createContext } from 'react'
+import image1 from "../assets/finolex-electrical-wires-500x500.webp"
+import image2 from "../assets/hi-fi-switch.jpg"
+import image3 from "../assets/cromtptonlight.webp"
+import image4 from "../assets/topcs.jpeg"
 
     export const productelement=createContext()
 
@@ -9,28 +13,28 @@
                 id: 1,
                 title: "Copper Electrical Wire",
                 price: 350,
-                image: "https://via.placeholder.com/150",
+                image: image1,
                 description: "High-quality copper wire for home and industrial wiring. Heat-resistant and long-lasting.",
             },
             {
                 id: 2,
                 title: "Modular Switch",
                 price: 120,
-                image: "https://via.placeholder.com/150",
+                image: image2,
                 description: "Sleek and durable modular switch for smooth operation and modern look.",
             },
             {
                 id: 3,
                 title: "LED Tube Light",
                 price: 450,
-                image: "https://via.placeholder.com/150",
+                image: image3,
                 description: "Energy-efficient LED tube light with bright white output for homes and offices.",
             },
             {
                 id: 4,
                 title: "Power Socket 3-Pin",
                 price: 90,
-                image: "https://via.placeholder.com/150",
+                image: image4,
                 description: "Standard 3-pin power socket with safety shutters and high durability.",
             },
             {

@@ -28,7 +28,7 @@ export default function Products() {
             <img
               src={ele.image}
               alt={ele.title}
-              className="w-full h-40 object-cover"
+              className="w-full h-40 object-center"
             />
             <div className="p-4">
               <h5 className={`text-lg font-semibold mb-1 ${ele.textColor}`}>{ele.title}</h5>
