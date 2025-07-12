@@ -4,6 +4,8 @@ import image1 from "../assets/finolex-electrical-wires-500x500.webp"
 import image2 from "../assets/hi-fi-switch.jpg"
 import image3 from "../assets/cromtptonlight.webp"
 import image4 from "../assets/topcs.jpeg"
+import image5 from "../assets/fanregulator.webp"
+import image6 from "../assets/mcbs.jpeg"
 
     export const productelement=createContext()
 
@@ -41,14 +43,14 @@ import image4 from "../assets/topcs.jpeg"
                 id: 5,
                 title: "Ceiling Fan Regulator",
                 price: 200,
-                image: "https://via.placeholder.com/150",
+                image: image5,
                 description: "Fan regulator with smooth control and long-lasting build for efficient speed management.",
             },
             {
                 id: 6,
                 title: "Miniature Circuit Breaker (MCB)",
                 price: 300,
-                image: "https://via.placeholder.com/150",
+                image: image6,
                 description: "Reliable MCB for protecting home circuits from overload and short circuit.",
             },
         ];
