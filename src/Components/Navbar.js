@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 
-
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-   
-
     return (
         <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900 border sticky top-0 z-50">
-            <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4  mx-auto">
+            <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
 
                 {/* Logo */}
                 <a href="#" className="flex items-center ms-2">
@@ -24,7 +21,6 @@ const Navbar = () => {
 
                 {/* Right Buttons */}
                 <div className="flex items-center lg:order-2">
-                   
 
                     {/* Mobile menu toggle button */}
                     <button
@@ -69,15 +65,14 @@ const Navbar = () => {
 
                 {/* Menu Items */}
                 <div
-                    className={`${isMenuOpen ? 'block' : 'hidden'
-                        } items-center justify-between w-full lg:flex lg:w-8 lg:me-24 lg:order-1`}
+                    className={`${isMenuOpen ? 'block' : 'hidden'} w-full lg:flex lg:w-auto lg:items-center lg:justify-between lg:order-1`}
                     id="mobile-menu"
                 >
-                    <ul className="flex flex-col my-2 lg:me-14 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <ul className="flex flex-col space-y-2 my-2 lg:me-14 font-medium lg:flex-row lg:space-x-8 lg:space-y-0 lg:mt-0">
                         <li>
                             <a
                                 href="#"
-                                className="block   py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:px-4 lg:p-0 dark:text-white"
+                                className="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:px-4 lg:p-0 dark:text-white"
                                 aria-current="page"
                             >
                                 Home
@@ -87,7 +82,7 @@ const Navbar = () => {
                             <li key={item}>
                                 <a
                                     href="#"
-                                    className="block py-2 pl-3 pr-4 lg:text-nowrap text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                                    className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                                 >
                                     {item}
                                 </a>

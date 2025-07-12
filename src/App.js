@@ -8,7 +8,7 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 function App() {
   return (
-    <div className=" bg-shipe-cove-400">
+    <div className=" bg-shipe-cove-400 ">
      <Navbar/>
      <HeroSection/>
      <Products />

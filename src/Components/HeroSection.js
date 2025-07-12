@@ -23,7 +23,7 @@ export default function HeroSection() {
         <h1 className='font-bold mx-auto'>
           <SplitText
             text="One-Stop Shop for All Your Electrical Needs"
-            className='text-center text-4xl lg:text-4xl font-bold mx-auto'
+            className='text-center text-4xl lg:text-4xl font-bold mx-auto px-4 leading-normal'
             delay={25}
             duration={0.6}
             ease="power3.out"
@@ -40,7 +40,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
-          className='w-96 mt-3 leading-7 font-medium text-xl text-gray-950'
+className='w-full max-w-md mt-3 leading-7 font-medium text-xl text-gray-950 px-4'
         >
           From quality wires and switches to everyday electrical essentials — we power your home and business with trusted brands.
         </motion.p>
