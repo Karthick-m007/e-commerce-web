@@ -5,6 +5,7 @@ export default function Header() {
         <div>
             <p>Welcome to E-commerce Websites</p>
             <h1>Welcome</h1>
+            <p>Changes are occured</p>
         </div>
     )
 }
